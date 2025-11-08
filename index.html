@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo" width="50">
+                <h1>My Website Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin/login.php">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by title or category...">
+            </div>
+            <div class="mode-toggle">
+                <button id="modeToggle">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="whats-new">
+    <h2>What's New</h2>
+    <button id="clearWhatsNew" class="btn-clear" style="display:none;">Clear List</button>
+    <div id="new-sites" class="card-grid"></div>
+</section>
+
+        <section id="all-sites">
+            <h2>All Websites</h2>
+            <div class="sort-options">
+                <label>Sort by:</label>
+                <select id="sortSelect">
+                    <option value="newest">Newest</option>
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="most-viewed">Most Viewed</option>
+                </select>
+            </div>
+            <div id="site-cards" class="card-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Website Hub</p>
+            <ul class="social-links">
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:contact@example.com">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
